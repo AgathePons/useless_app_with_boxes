@@ -2,6 +2,17 @@
 
 main {
   height: 100%;
+  padding: 1rem;
   background-color: rgba($primary-color, .4);
+  border: 1px solid $primary-color;
   box-shadow: 0 0 20px $primary-color;
+
+  .things {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    .things__container {
+      width: calc(50% - .5rem);
+    }
+  }
 }

@@ -157,3 +157,9 @@ input,
 button {
   outline: 0;
 }
+
+button {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}

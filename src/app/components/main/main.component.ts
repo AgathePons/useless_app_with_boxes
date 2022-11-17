@@ -7,9 +7,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
+  public unicornsValue: number = 0;
+  public potatoesValue: number = 0;
+  public cuteKittensValue: number = 0;
+  public grumpyCatsValue: number = 0;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public addToAll(number: number): void {
+    this.unicornsValue += number;
+    this.potatoesValue += number;
+    this.cuteKittensValue += number;
+    this.grumpyCatsValue += number;
+  }
+  public resetAll(): void {
+    this.unicornsValue = 0;
+    this.potatoesValue = 0;
+    this.cuteKittensValue = 0;
+    this.grumpyCatsValue = 0;
+  }
+
+  public onUnicornsChange(number: number): void {
+    this.unicornsValue = number;
   }
 
 }

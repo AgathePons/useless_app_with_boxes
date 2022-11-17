@@ -2,3 +2,32 @@
 @import 'global-styles/reset';
 @import 'global-styles/vars';
 
+article {
+  background-color: $dark-color;
+  padding: 1rem;
+}
+
+.control {
+  padding: 1rem 0;
+  display: flex;
+  gap: 1rem;
+  button {
+    flex-grow: 1;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: darken($primary-color, 15);
+    border: 2px solid $light-color;
+    transform: scale(1) rotate(0);
+    color: $light-color;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: .5rem;
+    transition: all .3s cubic-bezier(0.17, 0.84, 0.44, 1);
+    &:hover {
+      transform: scale(1.1);
+    }
+    &:active {
+      transform: rotate(10deg);
+    }
+  }
+}
+

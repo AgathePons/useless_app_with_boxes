@@ -1,3 +1,30 @@
 <main>
   <h2>Yolo</h2>
+  <div class="control">
+    <button type="button" (click)="addToAll(1)">+ 1 to all</button>
+    <button type="button" (click)="addToAll(10)">+ 10 to all</button>
+    <button type="button" (click)="addToAll(-1)">- 1 to all</button>
+    <button type="button" (click)="addToAll(-10)">- 10 to all</button>
+    <button type="button" (click)="resetAll()">Reset all</button>
+  </div>
+
+    <div class="things">
+    <app-unicorns
+      class="things__container"
+      [value]="unicornsValue"
+      (onChangeValue)="onUnicornsChange($event)"
+    ></app-unicorns>
+    <app-unicorns
+      class="things__container"
+      [value]="unicornsValue"
+    ></app-unicorns>
+    <app-unicorns
+      class="things__container"
+      [value]="unicornsValue"
+    ></app-unicorns>
+    <app-unicorns
+      class="things__container"
+      [value]="unicornsValue"
+    ></app-unicorns>
+  </div>
 </main>
