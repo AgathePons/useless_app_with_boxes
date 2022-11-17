@@ -1,11 +1,11 @@
-import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
 
 @Component({
-  selector: 'app-unicorns',
-  templateUrl: './unicorns.component.html',
-  styleUrls: ['./unicorns.component.scss']
+  selector: 'app-potatoes',
+  templateUrl: './potatoes.component.html',
+  styleUrls: ['./potatoes.component.scss']
 })
-export class UnicornsComponent implements OnInit, OnChanges {
+export class PotatoesComponent implements OnInit, OnChanges {
 
   @Input() public value: number = 0;
   @Output() onChangeValue: EventEmitter<number> = new EventEmitter<number>();

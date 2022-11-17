@@ -34,4 +34,8 @@ export class MainComponent implements OnInit {
     this.unicornsValue = number;
   }
 
+  public onPotatoesChange(number: number): void {
+    this.potatoesValue = number;
+  }
+
 }
