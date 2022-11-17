@@ -42,4 +42,8 @@ export class MainComponent implements OnInit {
     this.cuteKittensValue = number;
   }
 
+  public onGrumpyCatsChange(number: number): void {
+    this.grumpyCatsValue = number;
+  }
+
 }

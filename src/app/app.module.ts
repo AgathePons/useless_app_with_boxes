@@ -9,6 +9,7 @@ import { GlobalContainerComponent } from './components/global-container/global-c
 import { UnicornsComponent } from './components/unicorns/unicorns.component';
 import { PotatoesComponent } from './components/potatoes/potatoes.component';
 import { CuteKittensComponent } from './components/cute-kittens/cute-kittens.component';
+import { GrumpyCatsComponent } from './components/grumpy-cats/grumpy-cats.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CuteKittensComponent } from './components/cute-kittens/cute-kittens.com
     GlobalContainerComponent,
     UnicornsComponent,
     PotatoesComponent,
-    CuteKittensComponent
+    CuteKittensComponent,
+    GrumpyCatsComponent
   ],
   imports: [
     BrowserModule
