@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { GlobalContainerComponent } from './components/global-container/global-container.component';
 import { UnicornsComponent } from './components/unicorns/unicorns.component';
 import { PotatoesComponent } from './components/potatoes/potatoes.component';
+import { CuteKittensComponent } from './components/cute-kittens/cute-kittens.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { PotatoesComponent } from './components/potatoes/potatoes.component';
     FooterComponent,
     GlobalContainerComponent,
     UnicornsComponent,
-    PotatoesComponent
+    PotatoesComponent,
+    CuteKittensComponent
   ],
   imports: [
     BrowserModule

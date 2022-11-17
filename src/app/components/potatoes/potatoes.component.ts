@@ -17,7 +17,7 @@ export class PotatoesComponent implements OnInit, OnChanges {
   ngOnInit(): void {
   }
 
-  ngOnChanges(changes: SimpleChanges) {
+  ngOnChanges(_changes: SimpleChanges) {
     this.isPopped = true;
     setTimeout(
       () => {

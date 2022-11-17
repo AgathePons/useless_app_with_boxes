@@ -38,4 +38,8 @@ export class MainComponent implements OnInit {
     this.potatoesValue = number;
   }
 
+  public onCuteKittensChange(number: number): void {
+    this.cuteKittensValue = number;
+  }
+
 }
