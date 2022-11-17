@@ -1,0 +1,8 @@
+@import '../../../global-styles/vars';
+
+footer {
+  background-color: $dark-color;
+  padding: 1rem;
+  border: 1px solid $primary-color;
+  box-shadow: 0 0 20px $primary-color;
+}

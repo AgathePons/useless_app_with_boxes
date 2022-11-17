@@ -1,0 +1,7 @@
+@import '../../../global-styles/vars';
+
+main {
+  height: 100%;
+  background-color: rgba($primary-color, .4);
+  box-shadow: 0 0 20px $primary-color;
+}
