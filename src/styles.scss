@@ -5,6 +5,19 @@
 article {
   background-color: $dark-color;
   padding: 1rem;
+  .thing-title {
+    position: relative;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: .7rem;
+    &:after {
+      position: absolute;
+      left: 0;
+      bottom: -15px;
+      content: '~~~~~~~';
+      opacity: .5;
+    }
+  }
 }
 
 .control {
