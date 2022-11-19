@@ -1,0 +1,34 @@
+@import '../../../global-styles/vars';
+
+.overlay {
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, .7);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  .card {
+    margin: 2rem auto;
+    position: relative;
+    width: calc(100% - 4rem);
+    background-color: yellow;
+    color: black;
+    padding: 1rem;
+    opacity: 0;
+    transform: translateY(30%);
+    animation: popin-from-top .5s cubic-bezier(0.17, 0.84, 0.44, 1) forwards;
+  }
+}
+
+@keyframes popin-from-top {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(30%);
+    opacity: 1;
+  }
+ }
