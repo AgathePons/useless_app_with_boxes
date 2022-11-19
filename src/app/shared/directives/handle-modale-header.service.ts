@@ -6,7 +6,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class HandleModaleHeaderService {
 
-  private _isModaleHeaderHidden$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(true);
+  private _isModaleHeaderHidden$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
 
   constructor() { }
 
