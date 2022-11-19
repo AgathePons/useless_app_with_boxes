@@ -5,17 +5,33 @@ header {
   padding: 1rem;
   border: 1px solid $primary-color;
   box-shadow: 0 0 20px $primary-color;
+  display: flex;
+  justify-content: space-between;
   .header-title {
     font-weight: bold;
     font-size: 2rem;
-
     &:before {
       display: inline-block;
       margin-right: 1rem;
       opacity: .5;
       content: '>>';
       font-size: 1.5rem;
-
+    }
+  }
+  .header-btn {
+    background-color: darken($primary-color, 15);
+    border: 2px solid $light-color;
+    transform: scale(1) rotate(0);
+    color: $light-color;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: .5rem;
+    transition: all .3s cubic-bezier(0.17, 0.84, 0.44, 1);
+    &:hover {
+      transform: scale(1.1);
+    }
+    &:active {
+      transform: rotate(10deg);
     }
   }
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
+import { HandleModaleHeaderService } from 'src/app/shared/directives/handle-modale-header.service';
 
 @Component({
   selector: 'app-global-container',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GlobalContainerComponent implements OnInit {
 
-  constructor() { }
+  public isModaleHeaderHidden$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(true);
+
+  constructor(
+    private handleModaleHeaderService: HandleModaleHeaderService,
+  ) { }
 
   ngOnInit(): void {
+    this.isModaleHeaderHidden$ = this.handleModaleHeaderService.isModaleHeaderHidden;
   }
 
 }

@@ -10,6 +10,7 @@ import { UnicornsComponent } from './components/unicorns/unicorns.component';
 import { PotatoesComponent } from './components/potatoes/potatoes.component';
 import { CuteKittensComponent } from './components/cute-kittens/cute-kittens.component';
 import { GrumpyCatsComponent } from './components/grumpy-cats/grumpy-cats.component';
+import { ModaleComponent } from './components/modale/modale.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { GrumpyCatsComponent } from './components/grumpy-cats/grumpy-cats.compon
     UnicornsComponent,
     PotatoesComponent,
     CuteKittensComponent,
-    GrumpyCatsComponent
+    GrumpyCatsComponent,
+    ModaleComponent
   ],
   imports: [
     BrowserModule

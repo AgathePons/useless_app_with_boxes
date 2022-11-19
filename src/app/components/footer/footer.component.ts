@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges, SimpleChanges } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
+import { HandleModaleHeaderService } from 'src/app/shared/directives/handle-modale-header.service';
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  public isModaleHeaderHidden$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(true);
+  public objectBehavior: string = JSON.stringify(this.isModaleHeaderHidden$);
+
+  constructor(
+    private handleModaleHeaderService: HandleModaleHeaderService,
+  ) { }
 
   ngOnInit(): void {
+    this.isModaleHeaderHidden$ = this.handleModaleHeaderService.isModaleHeaderHidden;
+  }
+
+  public onFooterModalClick(): void {
+    this.handleModaleHeaderService.setIsModaleHeaderHidden(false);
   }
 
 }

@@ -51,11 +51,15 @@ article {
   font-weight: bold;
 
   &.popped {
-    animation: popin-from-top .2s cubic-bezier(0.17, 0.84, 0.44, 1) forwards;
+    animation: pop-from-top .2s cubic-bezier(0.17, 0.84, 0.44, 1) forwards;
   }
 }
 
-@keyframes popin-from-top {
+.pulse-anim {
+  animation: pulse .7s cubic-bezier(0.17, 0.84, 0.44, 1) infinite;
+}
+
+@keyframes pop-from-top {
   0% {
     transform: translateY(-10px) scale(1.7);
     opacity: 0;
@@ -64,5 +68,19 @@ article {
   100% {
     transform: translateY(0) scale(1);
     opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
   }
  }
